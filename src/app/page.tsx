@@ -30,7 +30,7 @@ export default function page() {
           </div>
 
           <div className="flex gap-10">
-            <Link href="/apply">
+            <Link href="/job/openings">
               <PulsatingButton>Apply Now</PulsatingButton>
             </Link>
             <Link href="/track-applications">
