@@ -1,9 +1,10 @@
+import ApplicantTable from "@/components/ApplicantsTable";
 import React from "react";
 
 export default function page() {
   return (
-    <div>
-      <h1>Tracking Page</h1>
+    <div className="min-h-screen">
+      <ApplicantTable />
     </div>
   );
 }
