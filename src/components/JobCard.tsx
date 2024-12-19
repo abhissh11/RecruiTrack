@@ -29,7 +29,7 @@ export default function JobCard({
       {/* Job Card */}
       <div
         className="flex items-center justify-between w-full md:w-[60%] rounded-lg bg-zinc-950 border border-zinc-900 p-4 shadow-xl 
-        hover:shadow-2xl hover:scale-105 transition-all duration-300"
+        hover:shadow-2xl hover:-translate-y-1 cursor-pointer transition-all duration-300"
       >
         {/* Left Section: Company Logo */}
         <div className="flex-shrink-0">

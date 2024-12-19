@@ -18,8 +18,8 @@ export default function page() {
               </h1>
             </BoxReveal>
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-              <h1 className="text-4xl text-slate-200 font-bold font-serif tracking-wide leading-relaxed">
-                RecruiTrack
+              <h1 className="text-4xl lg:text-5xl text-slate-200 font-bold font-serif tracking-wide leading-relaxed">
+                Recrui<span className="text-blue-600">Track</span>
               </h1>
             </BoxReveal>
             <BoxReveal boxColor={"#5046e6"} duration={0.5}>
