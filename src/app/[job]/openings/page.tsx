@@ -4,7 +4,7 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen pt-14">
       <h1 className="text-4xl text-slate-200 font-bold font-serif tracking-wide leading-relaxed text-center mt-10">
         New Job Openings
       </h1>
