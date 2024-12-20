@@ -92,7 +92,7 @@ export default function AdminSignin() {
           </button>
         </form>
         <h2 className="text-slate-200 py-2">
-          Don't have an account?{" "}
+          Don&rsquo;t have an account?{" "}
           <span className="hover:underline">
             <Link href="/auth/signup">Signup</Link>
           </span>
