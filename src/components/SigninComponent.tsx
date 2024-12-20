@@ -3,8 +3,10 @@ import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function AdminSignin() {
+  const router = useRouter();
   const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
   const [formData, setFormData] = useState({
     email: "",
@@ -43,6 +45,9 @@ export default function AdminSignin() {
         const data = await response.json();
         toast.success("Login successful!");
         // You can store the token or user data if needed
+        setTimeout(() => {
+          router.push("/admin-dashboard");
+        }, 100);
         console.log("User data:", data);
         setFormData({ email: "", password: "" });
       } else {
