@@ -46,7 +46,7 @@ export default function AdminSignin() {
         toast.success("Login successful!");
         // You can store the token or user data if needed
         setTimeout(() => {
-          router.push("/admin-dashboard");
+          router.push("/track-applications");
         }, 100);
         console.log("User data:", data);
         setFormData({ email: "", password: "" });

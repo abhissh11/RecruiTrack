@@ -42,24 +42,22 @@ export default function Features() {
       </div>
       <div className="flex flex-col md:flex-row justify-center gap-10 items-center">
         {features.map((feat, index) => (
-          <>
-            <div
-              key={index}
-              className="group border border-slate-800 p-6 w-72 min-h-80 rounded-xl overflow-hidden hover:bg-zinc-900"
-            >
-              <h1 className="text-slate-100 m-1 p-3 w-fit  bg-zinc-900 rounded group-hover:bg-zinc-800">
-                {feat.icon}
+          <div
+            key={index}
+            className="group border border-slate-800 p-6 w-72 min-h-80 rounded-xl overflow-hidden hover:bg-zinc-900"
+          >
+            <h1 className="text-slate-100 m-1 p-3 w-fit  bg-zinc-900 rounded group-hover:bg-zinc-800">
+              {feat.icon}
+            </h1>
+            <div className="flex flex-col gap-4 mt-10 justify-center items-center">
+              <h1 className="text-xl font-semibold text-slate-200 text-center">
+                {feat.title}
               </h1>
-              <div className="flex flex-col gap-4 mt-10 justify-center items-center">
-                <h1 className="text-xl font-semibold text-slate-200 text-center">
-                  {feat.title}
-                </h1>
-                <p className="text-slate-400 font-normal text-base">
-                  {feat.description}
-                </p>
-              </div>
+              <p className="text-slate-400 font-normal text-base">
+                {feat.description}
+              </p>
             </div>
-          </>
+          </div>
         ))}
       </div>
     </div>

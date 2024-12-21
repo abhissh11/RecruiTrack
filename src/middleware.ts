@@ -3,7 +3,7 @@ import { verifyJWTToken } from "./lib/jwt";
 
 export function middleware(request: NextRequest) {
     const origin = request.headers.get("origin");
-    const ALLOWED_ORIGINS = ["http://localhost:3000", "https://recruitrack.vercel.app/"]; // List of allowed origins
+    const ALLOWED_ORIGINS = ["http://localhost:3000", "https://recruitrack.vercel.app"]; // List of allowed origins
 
     // Handle CORS
     if (origin && !ALLOWED_ORIGINS.includes(origin)) {
